@@ -11,7 +11,7 @@ public class TickEr : MonoBehaviour {
 	private int _x;
 	// Update is called once per frame
 	private void Update ()
-	{			
+	{
 		System.Console.Write("Tick-ing: ");
 		System.Console.WriteLine(_x++);
 	}
