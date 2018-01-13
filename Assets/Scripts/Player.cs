@@ -3,16 +3,18 @@
 // RequireComponent will be automatically added ! :D sweet
 [RequireComponent(typeof(PlayerController))]
 [RequireComponent(typeof(GunController))]
-public class Player : MonoBehaviour
+public class Player : LivingEntity
 {
 
 	public 	float 				MoveSpeed = (float) 7.5;
 	private Camera 				_viewCamera;
 	private PlayerController 	_controller;
 	private GunController 		_gunController;
-	
-	private void Start ()
+
+	protected override void Start ()
 	{
+		base.Start();
+		
 		// attached to same object as this script
 		_controller 	= GetComponent<PlayerController>();
 		_gunController 	= GetComponent<GunController>();
