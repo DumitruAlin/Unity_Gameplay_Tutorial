@@ -1,17 +1,18 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts
-{
-	public class TickEr : MonoBehaviour {
+public class TickEr : MonoBehaviour {
 
-		// Use this for initialization
-		private void Start () {
+	// Use this for initialization
+	// ReSharper disable once Unity.RedundantEventFunction
+	private void Start () {
 		
-		}
-	
-		// Update is called once per frame
-		private void Update () {
-		
-		}
+	}
+
+	private int _x;
+	// Update is called once per frame
+	private void Update ()
+	{			
+		System.Console.Write("Tick-ing: ");
+		System.Console.WriteLine(_x++);
 	}
 }

@@ -9,9 +9,12 @@
           <e p="TickER.cs" t="Include" />
         </e>
       </e>
+      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
       <e p="Unity_Gameplay_Tutorial.sln" t="IncludeFlat" />
     </e>
   </component>
